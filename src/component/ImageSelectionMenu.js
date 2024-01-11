@@ -10,7 +10,6 @@ const ImageSelectionMenu = ({
   const onImageClick = (index, uri) => {
     setActiveImage(uri);
     setActiveImageIndex(index);
-    console.log("Image", uri, "Index", index);
   };
   return (
     <div
@@ -37,6 +36,22 @@ const ImageSelectionMenu = ({
           />
         ))}
       </div>
+      <style>
+        {`
+     
+      div::-webkit-scrollbar {
+        width: 5px;
+        height:10px
+      }
+      div::-webkit-scrollbar-track {
+        background-color: "#262626";
+      }
+      div::-webkit-scrollbar-thumb {
+        background-color: #404040; 
+        border-radius: 6px;
+      }
+    `}
+      </style>
     </div>
   );
 };
