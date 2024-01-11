@@ -1,13 +1,10 @@
 import React from "react";
+import { imageCardContainer } from "./Styles";
 
 const Imagecard = ({ imageUri, onClick, index, activeImageIndex }) => {
   return (
     <div
-      style={{
-        alignContent: "center",
-        alignItems: "center",
-        display: "flex",
-      }}
+      style={imageCardContainer}
       onClick={() => {
         onClick(index, imageUri);
       }}
