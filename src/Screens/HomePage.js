@@ -7,21 +7,14 @@ import ImageDisplay from "../component/ImageDisplay";
 import ImageInfo from "../component/ImageInfo";
 import ImageSelectionMenu from "../component/ImageSelectionMenu";
 import { arrayDummyImage } from "../Constants";
+import {
+  container,
+  imageCountContainer,
+  subContainer,
+} from "../component/Styles";
 
 const NumImage = ({ countOfImage }) => {
-  return (
-    <div
-      style={{
-        height: "30px",
-        marginTop: 30,
-        paddingLeft: 16,
-        color: "#fff",
-        fontSize: "18px",
-      }}
-    >
-      Showing {countOfImage} Photos
-    </div>
-  );
+  return <div style={imageCountContainer}>Showing {countOfImage} Photos</div>;
 };
 const HomePage = ({ addTask }) => {
   const [taskData, setTaskData] = useState({
@@ -41,15 +34,9 @@ const HomePage = ({ addTask }) => {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100vw",
-        background: "#1b1b1b",
-      }}
-    >
+    <div style={container}>
       <Header />
-      <div style={{ flexDirection: "row", display: "flex" }}>
+      <div style={subContainer}>
         <div>
           <NumImage countOfImage={arrayDummyImage.length} />
           <ImageDisplay uri={activeImage} />

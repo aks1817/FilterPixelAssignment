@@ -50,6 +50,24 @@ export const imageInfoContainer = {
 };
 export const separator = { border: "0.5px solid #404040", marginBottom: 10 };
 
+export const imageCountContainer = {
+  height: "30px",
+  marginTop: 30,
+  paddingLeft: 16,
+  color: "#fff",
+  fontSize: "18px",
+};
+
+export const container = {
+  height: "100vh",
+  width: "100vw",
+  background: "#1b1b1b",
+};
+export const subContainer = {
+  flexDirection: "row",
+  display: "flex",
+};
+
 export const text = {
   color: "#fff",
 };
