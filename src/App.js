@@ -1,16 +1,14 @@
 import "./App.css";
 import React from "react";
-import CreateTask from "./component/CreateTask";
-import DisplayTask from "./component/DisplayTask";
 import { Provider } from "react-redux";
 import store from "./store";
+import HomePage from "./Screens/HomePage";
 
 function App() {
   return (
     <Provider store={store}>
       <section className="container">
-        <CreateTask />
-        <DisplayTask />
+        <HomePage />
       </section>
     </Provider>
   );
