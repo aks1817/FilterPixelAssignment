@@ -5,7 +5,7 @@ import { headerContainer, logoImage } from "./Styles";
 const Header = () => {
   return (
     <div style={headerContainer}>
-      <img src={imageUri} style={logoImage} />
+      <img src={imageUri} style={logoImage} alt="logo" />
       Welcome
     </div>
   );

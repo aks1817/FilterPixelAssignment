@@ -18,6 +18,7 @@ const Imagecard = ({ imageUri, onClick, index, activeImageIndex }) => {
           border: activeImageIndex === index ? "1px solid #fff" : null,
           opacity: activeImageIndex === index ? 1 : 0.5,
         }}
+        alt="data-img"
       />
     </div>
   );
