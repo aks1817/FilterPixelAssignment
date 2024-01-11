@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
-import { addTask } from "../actions/task";
-import PropTypes from "prop-types";
 import Header from "../component/Header";
 import ImageDisplay from "../component/ImageDisplay";
 import ImageInfo from "../component/ImageInfo";
@@ -16,22 +13,9 @@ import {
 const NumImage = ({ countOfImage }) => {
   return <div style={imageCountContainer}>Showing {countOfImage} Photos</div>;
 };
-const HomePage = ({ addTask }) => {
-  const [taskData, setTaskData] = useState({
-    text: "",
-  });
+const HomePage = () => {
   const [activeImage, setActiveImage] = useState(arrayDummyImage[0].uri);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const { text } = taskData;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addTask(text);
-  };
-
-  const onChange = (e) => {
-    setTaskData({ ...taskData, [e.target.name]: e.target.value });
-  };
 
   return (
     <div style={container}>
@@ -52,8 +36,4 @@ const HomePage = ({ addTask }) => {
   );
 };
 
-HomePage.propTypes = {
-  addTask: PropTypes.func.isRequired,
-};
-
-export default connect(null, { addTask })(HomePage);
+export default HomePage;
