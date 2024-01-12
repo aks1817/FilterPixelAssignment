@@ -2,7 +2,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchData = createAsyncThunk("data/fetchData", async () => {
-  const response = await axios.get("http://localhost:8000/exif");
+  const response = await axios.get(
+    "https://filter-pixe-back-end.onrender.com/exif"
+  );
   return response.data;
 });
 
