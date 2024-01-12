@@ -17,7 +17,7 @@ const NumImage = ({ countOfImage }) => {
 };
 const HomePage = () => {
   const dispatch = useDispatch();
-  const { data, loading } = useSelector((state) => state.data);
+  const { loading } = useSelector((state) => state.data);
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
@@ -46,7 +46,7 @@ const HomePage = () => {
               <NumImage countOfImage={arrayDummyImage.length} />
               <ImageDisplay uri={activeImage} />
             </div>
-            <ImageInfo />
+            <ImageInfo activeImageIndex={activeImageIndex} />
           </div>
           <ImageSelectionMenu
             setActiveImage={setActiveImage}

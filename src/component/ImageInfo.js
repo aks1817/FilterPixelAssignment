@@ -1,6 +1,6 @@
 import React from "react";
-import { arrayDummy } from "../Constants";
 import { imageInfoContainer, labelContainer, separator } from "./Styles";
+import { useSelector } from "react-redux";
 
 const DetailsLabel = ({ label, value }) => {
   return (
@@ -23,16 +23,20 @@ const DetailsLabel = ({ label, value }) => {
     </div>
   );
 };
-const ImageInfo = () => {
+const ImageInfo = ({ activeImageIndex }) => {
+  const { data } = useSelector((state) => state.data);
+  const info = data && data[activeImageIndex] && data[activeImageIndex].info;
+
   return (
     <div style={imageInfoContainer}>
       <div style={separator} />
       <div style={{ paddingLeft: 8 }}>
         About Image
         <div style={labelContainer}>
-          {arrayDummy.map((item, index) => (
-            <DetailsLabel value={item.value} label={item.label} key={index} />
-          ))}
+          {info &&
+            Object.entries(info).map(([label, value], index) => (
+              <DetailsLabel value={value} label={label} key={index} />
+            ))}
         </div>
       </div>
     </div>
