@@ -1,3 +1,17 @@
+import ImageOne from "./assets/ImageOne.jpg";
+import ImageTwo from "./assets/ImageTwo.jpg";
+import ImageThree from "./assets/ImageThree.jpg";
+import ImageFour from "./assets/ImageFour.jpg";
+import ImageFive from "./assets/ImageFive.jpg";
+import ImageSix from "./assets/ImageSix.jpg";
+import ImageSeven from "./assets/ImageSeven.jpg";
+import ImageEight from "./assets/ImageEight.jpg";
+import ImageNine from "./assets/ImageNine.jpg";
+import ImageTen from "./assets/ImageTen.jpg";
+import ImageEleven from "./assets/ImageEleven.jpg";
+import ImageTwelve from "./assets/ImageTwelve.jpg";
+import ImageThirteen from "./assets/ImageThirteen.jpg";
+
 export const imageUri =
   "https://media.licdn.com/dms/image/C4E0BAQGGwfK26wjkjw/company-logo_200_200/0/1632041566461/filterpixel_logo?e=2147483647&v=beta&t=hY5LHdGRJiNZ8NcZH11EU08QsnJVa8EmuhAHFpPP4Uc";
 
@@ -54,33 +68,42 @@ export const arrayDummy = [
 
 export const arrayDummyImage = [
   {
-    uri: "https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg",
+    uri: ImageOne,
   },
   {
-    uri: "https://miro.medium.com/v2/resize:fit:1400/1*M7_GzV-glZaZLNuSiNdiPQ.png",
+    uri: ImageTwo,
   },
   {
-    uri: "https://c8.alamy.com/comp/2C46HEW/3d-selection-of-spheres-and-random-objects-on-pedestal-in-front-of-orange-wall-3d-illustration-2C46HEW.jpg",
+    uri: ImageThree,
   },
   {
-    uri: "https://media.newyorker.com/photos/63937f9e6627f9c77e1d1ea9/16:9/w_2560,h_1440,c_limit/Brody-Random-Acts-Of-Flyness-S2.jpg",
+    uri: ImageFour,
   },
   {
-    uri: "https://media.istockphoto.com/id/1295274245/photo/random-multicolored-spheres-computer-generated-abstract-form-of-large-and-small-balls-3d.jpg?s=612x612&w=0&k=20&c=q7NOl28YxIIOqKu6em50VlKrg6ISFyVww_nLOCr5W_A=",
+    uri: ImageFive,
   },
   {
-    uri: "https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg",
+    uri: ImageSix,
   },
   {
-    uri: "https://miro.medium.com/v2/resize:fit:1400/1*M7_GzV-glZaZLNuSiNdiPQ.png",
+    uri: ImageSeven,
   },
   {
-    uri: "https://c8.alamy.com/comp/2C46HEW/3d-selection-of-spheres-and-random-objects-on-pedestal-in-front-of-orange-wall-3d-illustration-2C46HEW.jpg",
+    uri: ImageEight,
   },
   {
-    uri: "https://media.newyorker.com/photos/63937f9e6627f9c77e1d1ea9/16:9/w_2560,h_1440,c_limit/Brody-Random-Acts-Of-Flyness-S2.jpg",
+    uri: ImageNine,
   },
   {
-    uri: "https://media.istockphoto.com/id/1295274245/photo/random-multicolored-spheres-computer-generated-abstract-form-of-large-and-small-balls-3d.jpg?s=612x612&w=0&k=20&c=q7NOl28YxIIOqKu6em50VlKrg6ISFyVww_nLOCr5W_A=",
+    uri: ImageTen,
+  },
+  {
+    uri: ImageEleven,
+  },
+  {
+    uri: ImageTwelve,
+  },
+  {
+    uri: ImageThirteen,
   },
 ];
