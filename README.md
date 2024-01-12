@@ -5,14 +5,8 @@ Web Application that processes and displays previews of RAW images stored on the
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
-
-### Prerequisites
-
-- List any prerequisites or dependencies here.
 
 ### Clone the repository
 
