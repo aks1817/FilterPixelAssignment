@@ -10,7 +10,7 @@ Web Application that processes and displays previews of RAW images stored on the
 
 ### Clone the repository
 
-1) git clone [https://github.com/your-username/your-project.git](https://github.com/aks1817/FilterPixelAssignment.git)
+1) git clone https://github.com/aks1817/FilterPixelAssignment.git
 2) cd your-project
 
 
