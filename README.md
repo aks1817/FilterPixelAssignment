@@ -10,17 +10,17 @@ Web Application that processes and displays previews of RAW images stored on the
 
 ### Clone the repository
 
-git clone https://github.com/your-username/your-project.git
-cd your-project
+1) git clone https://github.com/your-username/your-project.git
+2) cd your-project
 
 
 ### Install dependencies
 
-npm install
+1) npm install
 
 ## Usage
 
-npm start
+1) npm start
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
